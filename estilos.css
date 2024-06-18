@@ -1,0 +1,93 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: "intro_head_rbase";
+    src: url("../FONTS/introheadr-base-webfont.woff2") format("woff2"),
+         url("../FONTS/introheadr-base-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*=== 16 px = 12 pts = 100% = 1 em ====> esta es la medida estandar de laletra en paginas web y sus equivalencias en pixeles, puntos, porcentaje y ems*/
+body {
+	background: #212121  url(../img/fondo.jpg);
+	color: #FFF;
+	font-family: "intro_head_rbase", Helvetica, Verdana;
+	font-size: 2em;
+}
+
+
+h1{
+	color:#FFF;
+	margin: 0.25em auto;   /* esto utilizando el MODELO DE CAJAS */
+	text-align: center;
+	text-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+}
+
+header, nav, footer {
+	background: #1e6381;
+	border-radius:0.5em;
+	margin: 0.5em auto;
+	max-width: 960px; /*aqui especificamos el ancho maximo que va a tener nuestra pantallas*/
+	padding: 0.25em;
+	color: yellow;
+	text-align: center;
+}
+
+footer{
+	text-align: right;
+	font-size: 0.5em;
+	color: navy;
+}
+
+section#contenedor{
+	/*background: #FFF;*/ /*solo se utilizo este fondo blanto del contenedor para trabajar sus contenidos, como una guia, pero una vez trabajado esta de mas y se debe de eliminar*/
+	border-radius:0.5em;
+	margin: 0.5em auto;
+	max-width: 960px;
+	padding: 0em;
+	text-align: center;
+}
+
+
+section#principal, aside {
+	background: #1e6381;
+	border-radius:0.5em;
+	display: inline-block; /*se comporta como un elemento en linea y todo lo que venga despues en bloque */
+	margin: 0.25em auto;
+	max-width: 960px; /*ancho maximo*/
+	min-height: 200px; /*altura minima dependera de la altura de nuestros contenidos*/
+	padding: 0.25em;
+	text-align: center;
+	vertical-align: top; /* alinea los elementos de manera vertical*/
+	width:65%;
+}
+
+p{
+	font-size: 1em;
+	text-align: justify;
+	color: black;
+}
+
+article {
+	background: #011e30;
+	border-radius:0.5em;
+	min-height: 400px;
+	padding: 0.25em;
+}
+
+img{
+	border-radius:0.5em;
+	min-height: 140px;
+	max-height: 260px;
+	padding: 0.25em;
+	width:95%;
+}
+
+aside{
+	width: 30%;
+}
